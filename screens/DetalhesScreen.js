@@ -5,7 +5,7 @@ export default function DetalhesScreen({ route }) {
   const { transacao } = route.params || {};
   const [carregando, setCarregando] = useState(true);
 
-  // Exemplo real de useEffect com função de limpeza (cleanup) exigido pelo professor
+  // Simula o carregamento dos detalhes e limpa o timer ao desmontar a tela
   useEffect(() => {
     const timer = setTimeout(() => {
       setCarregando(false);
